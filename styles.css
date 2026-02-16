@@ -251,6 +251,59 @@ p {
   margin-top: 0.65rem;
 }
 
+.section-reviews .section-heading h2 {
+  color: var(--accent-olive);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.78rem;
+}
+
+.review-card {
+  margin: 0;
+  border: 1px solid #d7cec3;
+  border-top: 2px solid var(--accent-olive);
+  background: linear-gradient(180deg, #fffdf9 0%, #f3eee7 100%);
+  border-radius: var(--radius);
+  padding: 1.05rem;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 0.72rem;
+}
+
+.review-card blockquote {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.91rem;
+  line-height: 1.5;
+}
+
+.review-card figcaption {
+  display: grid;
+  gap: 0.14rem;
+}
+
+.reviewer {
+  color: var(--accent-olive);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.reviewer-role,
+.review-date {
+  color: var(--muted);
+  font-size: 0.74rem;
+}
+
+.review-date {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 .metrics {
   display: grid;
   gap: 0.78rem;
@@ -478,7 +531,15 @@ p {
 }
 
 #experience-details .section-heading h2 {
-  color: var(--accent-terracotta);
+  color: var(--accent-berry);
+}
+
+#experience-details .timeline {
+  border-left-color: var(--accent-berry);
+}
+
+#experience-details .timeline-item::before {
+  background: var(--accent-berry);
 }
 
 #education .education-grid article {
@@ -656,7 +717,8 @@ p {
   }
 
   .skills-grid,
-  .early-grid {
+  .early-grid,
+  .reviews-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -721,7 +783,8 @@ p {
   .skills-grid,
   .fulltime-summaries,
   .internship-summaries,
-  .early-grid {
+  .early-grid,
+  .reviews-grid {
     grid-template-columns: 1fr;
   }
 
