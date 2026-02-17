@@ -28,15 +28,16 @@
   --accent-heather-birch: #8b847b;
   --accent-heather-birch-soft: #ddd5ca;
   --brand-capital-one: #004977;
-  --brand-spotify: #14833b;
+  --brand-capital-one-accent: #d03027;
+  --brand-spotify: #1db954;
   --brand-yext: #1f3f95;
-  --brand-arista: #c2171d;
+  --brand-arista: #16325b;
   --brand-deutsche-bank: #001a8f;
   --brand-goldman-sachs: #3f658f;
-  --brand-gmail: #ea4335;
+  --brand-gmail: #5f6368;
   --brand-linkedin: #0a66c2;
-  --brand-github: #24292f;
-  --brand-x: #0f1419;
+  --brand-github: #181717;
+  --brand-x: #000000;
   --surface-tint: #f8f2e8;
   --surface-rose: #f8ece9;
   --panel-ink: #121211;
@@ -226,13 +227,13 @@ body {
 
 .floating-contact-link--gmail {
   color: var(--brand-gmail);
-  border-color: rgba(234, 67, 53, 0.32);
-  background: linear-gradient(160deg, #fff6f5 0%, #fdeae8 100%);
+  border-color: rgba(111, 102, 93, 0.3);
+  background: linear-gradient(160deg, #fffaf4 0%, #f2ebe1 100%);
 }
 
 .floating-contact-link--gmail:hover {
-  border-color: rgba(234, 67, 53, 0.48);
-  background: linear-gradient(160deg, #ffefed 0%, #fddfdb 100%);
+  border-color: rgba(111, 102, 93, 0.44);
+  background: linear-gradient(160deg, #faf3e8 0%, #ece2d5 100%);
 }
 
 .section {
@@ -680,16 +681,22 @@ p {
 
 .org-link--capitalone {
   color: var(--brand-capital-one);
-  font-family: "Optimist", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Optimist", "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.003em;
+}
+
+.org-link--capitalone:hover {
+  color: var(--brand-capital-one);
+  text-decoration-color: var(--brand-capital-one-accent);
+  text-decoration-thickness: 1.5px;
 }
 
 .org-link--spotify {
   color: var(--brand-spotify);
-  font-family: "Circular Spotify Text", "Circular Std", "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Circular Spotify Text", "Circular Std", "Spotify Mix", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.005em;
 }
 
 .org-link--yext {
@@ -701,7 +708,7 @@ p {
 
 .org-link--arista {
   color: var(--brand-arista);
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   letter-spacing: 0.01em;
 }
@@ -1012,6 +1019,10 @@ p {
   color: var(--accent-terracotta);
 }
 
+#work .section-heading h2 {
+  color: var(--accent-berry);
+}
+
 #experience-details .section-heading h2 {
   color: var(--accent-berry);
 }
@@ -1169,7 +1180,7 @@ p {
 }
 
 .contact-grid {
-  width: min(860px, 100%);
+  width: min(560px, 100%);
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1242,25 +1253,17 @@ p {
 
 .contact-tile-copy {
   min-width: 0;
-  display: grid;
-  gap: 0.12rem;
+  display: flex;
+  align-items: center;
 }
 
 .contact-tile-label {
   color: var(--tone-modern-taupe);
-  font-size: 0.63rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-weight: 700;
-}
-
-.contact-tile-value {
-  color: var(--ink-soft);
-  font-size: 0.88rem;
-  line-height: 1.3;
+  font-size: 0.92rem;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-weight: 600;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .contact-tile-action {
@@ -1268,7 +1271,10 @@ p {
   border-radius: var(--radius-pill);
   background: #f2e8da;
   color: var(--accent-berry);
-  padding: 0.24rem 0.56rem;
+  min-height: 1.65rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.22rem 0.58rem;
   font-size: 0.66rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1277,23 +1283,18 @@ p {
 
 .contact-tile--email .contact-tile-icon {
   color: var(--brand-gmail);
-  border-color: rgba(234, 67, 53, 0.35);
+  border-color: rgba(111, 102, 93, 0.3);
 }
 
 .contact-tile--email .contact-tile-label {
-  color: var(--brand-gmail);
-  font-family: "Google Sans Text", "Google Sans", "Product Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.contact-tile--email .contact-tile-value {
-  color: #b3261e;
+  color: #4f4a44;
   font-family: "Google Sans Text", "Google Sans", "Product Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .contact-tile--email .contact-tile-action {
-  color: #b3261e;
-  border-color: rgba(234, 67, 53, 0.35);
-  background: #fce8e6;
+  color: #4f4a44;
+  border-color: rgba(111, 102, 93, 0.4);
+  background: #f3ede3;
 }
 
 .contact-tile--linkedin .contact-tile-icon {
@@ -1306,15 +1307,10 @@ p {
   font-family: "LinkedIn Sans", "Community", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.contact-tile--linkedin .contact-tile-value {
-  color: #004182;
-  font-family: "LinkedIn Sans", "Community", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 .contact-tile--linkedin .contact-tile-action {
-  color: #004182;
-  border-color: rgba(10, 102, 194, 0.35);
-  background: #e8f3ff;
+  color: var(--brand-linkedin);
+  border-color: rgba(10, 102, 194, 0.34);
+  background: #eaf4fe;
 }
 
 .contact-tile--github .contact-tile-icon {
@@ -1327,15 +1323,10 @@ p {
   font-family: "Mona Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.contact-tile--github .contact-tile-value {
-  color: var(--brand-github);
-  font-family: "Mona Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 .contact-tile--github .contact-tile-action {
   color: var(--brand-github);
-  border-color: #d0d7de;
-  background: #f6f8fa;
+  border-color: rgba(24, 23, 23, 0.24);
+  background: #f3f4f6;
 }
 
 .contact-tile--x .contact-tile-icon {
@@ -1348,24 +1339,10 @@ p {
   font-family: "Chirp", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.contact-tile--x .contact-tile-value {
-  color: var(--brand-x);
-  font-family: "Chirp", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 .contact-tile--x .contact-tile-action {
   color: var(--brand-x);
-  border-color: rgba(15, 20, 25, 0.3);
-  background: #f5f8fa;
-}
-
-.contact-tile--email .contact-tile-label,
-.contact-tile--linkedin .contact-tile-label,
-.contact-tile--github .contact-tile-label,
-.contact-tile--x .contact-tile-label {
-  text-transform: none;
-  letter-spacing: 0.01em;
-  font-size: 0.78rem;
+  border-color: rgba(0, 0, 0, 0.24);
+  background: #f4f4f4;
 }
 
 .site-footer {
