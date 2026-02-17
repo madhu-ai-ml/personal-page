@@ -27,6 +27,12 @@
   --cta-border: #b28a76;
   --accent-heather-birch: #8b847b;
   --accent-heather-birch-soft: #ddd5ca;
+  --brand-capital-one: #004977;
+  --brand-spotify: #14833b;
+  --brand-yext: #1f3f95;
+  --brand-arista: #c2171d;
+  --brand-deutsche-bank: #001a8f;
+  --brand-goldman-sachs: #3f658f;
   --surface-tint: #f8f2e8;
   --surface-rose: #f8ece9;
   --panel-ink: #121211;
@@ -563,6 +569,48 @@ p {
   text-underline-offset: 2px;
 }
 
+.org-link--capitalone {
+  color: var(--brand-capital-one);
+  font-family: "Optimist", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.org-link--spotify {
+  color: var(--brand-spotify);
+  font-family: "Circular Spotify Text", "Circular Std", "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.org-link--yext {
+  color: var(--brand-yext);
+  font-family: "GT Eesti Display", "Soehne", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.org-link--arista {
+  color: var(--brand-arista);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.org-link--deutsche-bank {
+  color: var(--brand-deutsche-bank);
+  font-family: "Deutsche Bank Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.org-link--goldman-sachs {
+  color: var(--brand-goldman-sachs);
+  font-family: "Goldman Sans", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
 .snapshot-role {
   color: var(--ink-soft);
   font-size: 0.88rem;
@@ -610,6 +658,11 @@ p {
 
 .internship-name.org-title {
   display: inline-flex;
+}
+
+.internship-name .org-link {
+  text-transform: none;
+  letter-spacing: 0.01em;
 }
 
 .internship-role {
@@ -860,10 +913,6 @@ p {
 
 #experience-details .timeline-item::before {
   background: var(--accent-berry);
-}
-
-#experience-details h3 .org-link {
-  color: inherit;
 }
 
 #education .education-grid article {
