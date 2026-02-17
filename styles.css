@@ -1062,7 +1062,9 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--ink-soft);
+  background: #ffffff;
+  border: 1px solid rgba(139, 132, 123, 0.3);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.24);
 }
 
@@ -1071,6 +1073,13 @@ p {
   height: 1rem;
   fill: currentColor;
   display: block;
+}
+
+.contact-tile-icon img {
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  object-fit: contain;
 }
 
 .contact-tile-copy {
@@ -1109,19 +1118,39 @@ p {
 }
 
 .contact-tile--email .contact-tile-icon {
-  background: linear-gradient(135deg, var(--accent-berry) 0%, var(--accent-terracotta) 100%);
+  color: #ea4335;
+  border-color: rgba(234, 67, 53, 0.35);
+}
+
+.contact-tile--email .contact-tile-label {
+  color: #d8473a;
 }
 
 .contact-tile--linkedin .contact-tile-icon {
-  background: linear-gradient(135deg, var(--accent-olive) 0%, var(--accent-heather-birch) 100%);
+  color: #0a66c2;
+  border-color: rgba(10, 102, 194, 0.32);
+}
+
+.contact-tile--linkedin .contact-tile-label {
+  color: #0a66c2;
 }
 
 .contact-tile--github .contact-tile-icon {
-  background: linear-gradient(135deg, var(--tone-modern-taupe) 0%, var(--tone-concrete) 100%);
+  color: #181717;
+  border-color: rgba(24, 23, 23, 0.3);
+}
+
+.contact-tile--github .contact-tile-label {
+  color: #24292f;
 }
 
 .contact-tile--x .contact-tile-icon {
-  background: linear-gradient(135deg, var(--tone-stone-taupe) 0%, var(--accent-terracotta) 100%);
+  color: #000000;
+  border-color: rgba(20, 20, 20, 0.3);
+}
+
+.contact-tile--x .contact-tile-label {
+  color: #111111;
 }
 
 .site-footer {
