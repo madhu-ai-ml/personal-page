@@ -198,7 +198,7 @@ p {
   align-items: center;
   justify-content: center;
   border: 1px solid transparent;
-  border-radius: 12px;
+  border-radius: 0;
   padding: 0.56rem 1.22rem;
   text-decoration: none;
   font-size: 0.76rem;
@@ -304,7 +304,7 @@ p {
 }
 
 .section-reviews .section-heading h2 {
-  color: var(--accent-olive);
+  color: var(--accent-berry);
 }
 
 .reviews-carousel {
@@ -340,12 +340,12 @@ p {
 
 .reviews-viewport::before {
   left: 0;
-  background: linear-gradient(90deg, rgba(242, 236, 227, 0.96), rgba(242, 236, 227, 0));
+  background: linear-gradient(90deg, rgba(248, 242, 232, 0.97), rgba(248, 242, 232, 0));
 }
 
 .reviews-viewport::after {
   right: 0;
-  background: linear-gradient(270deg, rgba(242, 236, 227, 0.96), rgba(242, 236, 227, 0));
+  background: linear-gradient(270deg, rgba(248, 242, 232, 0.97), rgba(248, 242, 232, 0));
 }
 
 .reviews-track {
@@ -357,12 +357,12 @@ p {
 }
 
 .review-card {
-  --review-accent: #6f7b64;
+  --review-accent: var(--accent-olive);
   margin: 0;
-  border: 1px solid rgba(139, 132, 123, 0.32);
+  border: 1px solid var(--line);
   background:
-    radial-gradient(circle at 88% 12%, rgba(168, 106, 79, 0.08), transparent 45%),
-    linear-gradient(160deg, #fffefb 0%, #f5ede1 100%);
+    radial-gradient(circle at 88% 12%, rgba(168, 106, 79, 0.12), transparent 45%),
+    linear-gradient(160deg, var(--surface) 0%, var(--tone-bone) 100%);
   border-radius: 16px;
   padding: 0.92rem 0.96rem;
   box-shadow:
@@ -381,7 +381,7 @@ p {
   position: absolute;
   inset: 0 0 auto 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--review-accent) 0%, rgba(255, 255, 255, 0.75) 100%);
+  background: linear-gradient(90deg, var(--review-accent) 0%, rgba(245, 236, 223, 0.84) 100%);
 }
 
 .review-card blockquote {
@@ -392,14 +392,14 @@ p {
 }
 
 .review-card--stellar {
-  border-color: rgba(95, 116, 87, 0.42);
+  border-color: rgba(111, 123, 100, 0.42);
   box-shadow:
     0 16px 30px rgba(20, 20, 20, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.84);
 }
 
 .review-card--stellar::before {
-  background: linear-gradient(90deg, #47673e 0%, #87a37f 100%);
+  background: linear-gradient(90deg, var(--accent-olive) 0%, var(--metal-soft) 100%);
 }
 
 .review-highlight {
@@ -408,35 +408,35 @@ p {
 }
 
 .review-card:nth-child(4n + 1) {
-  --review-accent: #9c623d;
-  border-color: rgba(156, 98, 61, 0.34);
+  --review-accent: var(--accent-terracotta);
+  border-color: rgba(168, 106, 79, 0.36);
   background:
-    radial-gradient(circle at 84% 14%, rgba(194, 137, 99, 0.18), transparent 48%),
-    linear-gradient(160deg, #fff9f3 0%, #f4e5d8 100%);
+    radial-gradient(circle at 84% 14%, rgba(168, 106, 79, 0.2), transparent 48%),
+    linear-gradient(160deg, #fff9f3 0%, #f4e6d8 100%);
 }
 
 .review-card:nth-child(4n + 2) {
-  --review-accent: #5f7a69;
-  border-color: rgba(95, 122, 105, 0.34);
+  --review-accent: var(--accent-olive);
+  border-color: rgba(111, 123, 100, 0.34);
   background:
-    radial-gradient(circle at 84% 14%, rgba(128, 162, 139, 0.2), transparent 48%),
-    linear-gradient(160deg, #f9fdf9 0%, #e7f1e8 100%);
+    radial-gradient(circle at 84% 14%, rgba(111, 123, 100, 0.18), transparent 48%),
+    linear-gradient(160deg, #fafcf7 0%, #ecf1e8 100%);
 }
 
 .review-card:nth-child(4n + 3) {
-  --review-accent: #5f7290;
-  border-color: rgba(95, 114, 144, 0.34);
+  --review-accent: var(--accent-berry);
+  border-color: rgba(125, 76, 80, 0.34);
   background:
-    radial-gradient(circle at 84% 14%, rgba(132, 156, 189, 0.2), transparent 48%),
-    linear-gradient(160deg, #f9fcff 0%, #e7edf6 100%);
+    radial-gradient(circle at 84% 14%, rgba(125, 76, 80, 0.18), transparent 48%),
+    linear-gradient(160deg, #fcf7f5 0%, #f2e6e3 100%);
 }
 
 .review-card:nth-child(4n + 4) {
-  --review-accent: #8a6e4b;
-  border-color: rgba(138, 110, 75, 0.34);
+  --review-accent: var(--metal);
+  border-color: rgba(151, 114, 77, 0.36);
   background:
-    radial-gradient(circle at 84% 14%, rgba(191, 163, 126, 0.2), transparent 48%),
-    linear-gradient(160deg, #fffcf5 0%, #f2ead7 100%);
+    radial-gradient(circle at 84% 14%, rgba(151, 114, 77, 0.16), transparent 48%),
+    linear-gradient(160deg, #fffbf4 0%, #f3e8d6 100%);
 }
 
 .review-card figcaption {
