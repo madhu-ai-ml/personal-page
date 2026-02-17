@@ -33,6 +33,10 @@
   --brand-arista: #c2171d;
   --brand-deutsche-bank: #001a8f;
   --brand-goldman-sachs: #3f658f;
+  --brand-gmail: #ea4335;
+  --brand-linkedin: #0a66c2;
+  --brand-github: #24292f;
+  --brand-x: #0f1419;
   --surface-tint: #f8f2e8;
   --surface-rose: #f8ece9;
   --panel-ink: #121211;
@@ -1167,21 +1171,45 @@ p {
 }
 
 .contact-tile--email .contact-tile-icon {
-  color: #ea4335;
+  color: var(--brand-gmail);
   border-color: rgba(234, 67, 53, 0.35);
 }
 
 .contact-tile--email .contact-tile-label {
-  color: #d8473a;
+  color: var(--brand-gmail);
+  font-family: "Google Sans Text", "Google Sans", "Product Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.contact-tile--email .contact-tile-value {
+  color: #b3261e;
+  font-family: "Google Sans Text", "Google Sans", "Product Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.contact-tile--email .contact-tile-action {
+  color: #b3261e;
+  border-color: rgba(234, 67, 53, 0.35);
+  background: #fce8e6;
 }
 
 .contact-tile--linkedin .contact-tile-icon {
-  color: #0a66c2;
+  color: var(--brand-linkedin);
   border-color: rgba(10, 102, 194, 0.32);
 }
 
 .contact-tile--linkedin .contact-tile-label {
-  color: #0a66c2;
+  color: var(--brand-linkedin);
+  font-family: "LinkedIn Sans", "Community", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.contact-tile--linkedin .contact-tile-value {
+  color: #004182;
+  font-family: "LinkedIn Sans", "Community", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.contact-tile--linkedin .contact-tile-action {
+  color: #004182;
+  border-color: rgba(10, 102, 194, 0.35);
+  background: #e8f3ff;
 }
 
 .contact-tile--github .contact-tile-icon {
@@ -1190,7 +1218,19 @@ p {
 }
 
 .contact-tile--github .contact-tile-label {
-  color: #24292f;
+  color: var(--brand-github);
+  font-family: "Mona Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.contact-tile--github .contact-tile-value {
+  color: var(--brand-github);
+  font-family: "Mona Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.contact-tile--github .contact-tile-action {
+  color: var(--brand-github);
+  border-color: #d0d7de;
+  background: #f6f8fa;
 }
 
 .contact-tile--x .contact-tile-icon {
@@ -1199,7 +1239,28 @@ p {
 }
 
 .contact-tile--x .contact-tile-label {
-  color: #111111;
+  color: var(--brand-x);
+  font-family: "Chirp", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.contact-tile--x .contact-tile-value {
+  color: var(--brand-x);
+  font-family: "Chirp", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.contact-tile--x .contact-tile-action {
+  color: var(--brand-x);
+  border-color: rgba(15, 20, 25, 0.3);
+  background: #f5f8fa;
+}
+
+.contact-tile--email .contact-tile-label,
+.contact-tile--linkedin .contact-tile-label,
+.contact-tile--github .contact-tile-label,
+.contact-tile--x .contact-tile-label {
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-size: 0.78rem;
 }
 
 .site-footer {
