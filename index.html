@@ -24,10 +24,10 @@
       <div class="container header-row">
         <a href="#top" class="brand">MADHU JAYAKUMAR</a>
         <nav class="top-nav" aria-label="Primary">
-          <a href="#reviews">Reviews</a>
+          <a href="#reviews">Peer Reviews</a>
+          <a href="#skills">Technical Skills</a>
           <a href="#education">Education</a>
           <a href="#experience">Experience</a>
-          <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
@@ -44,6 +44,8 @@
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#education">Career Profile</a>
+            <a class="btn btn-ghost" href="#skills">Technical Skills</a>
+            <a class="btn btn-contact" href="#contact">Contacts</a>
           </div>
         </div>
 
@@ -57,62 +59,123 @@
         </aside>
       </section>
 
-      <section id="reviews" class="section container reveal section-reviews" aria-label="Coworker reviews">
+      <section id="reviews" class="section container reveal section-reviews" aria-label="Peer reviews">
         <div class="section-heading">
-          <p class="eyebrow">Coworker Reviews</p>
-          <h2>What teammates said</h2>
+          <p class="eyebrow">Peer Reviews</p>
+          <h2>Peer Feedback Highlights</h2>
         </div>
-        <div class="reviews-grid">
-          <figure class="review-card">
-            <blockquote>
-              "One of your superpowers is diagnosing, refining, and empathizing with customers' needs,
-              even in high-stakes projects under time pressure."
-            </blockquote>
-            <figcaption>
-              <span class="reviewer">Madeleine</span>
-              <span class="reviewer-role">Product Manager</span>
-            </figcaption>
-          </figure>
-          <figure class="review-card">
-            <blockquote>
-              "Your ability to get up to speed with a system, assume ownership, and answer questions
-              about it are unrivaled."
-            </blockquote>
-            <figcaption>
-              <span class="reviewer">William</span>
-              <span class="reviewer-role">Senior Engineer</span>
-            </figcaption>
-          </figure>
-          <figure class="review-card">
-            <blockquote>
-              "You organized swarms around Holocron and ClickHouse that led to solutions and knowledge
-              sharing, and led both workstreams ahead of schedule."
-            </blockquote>
-            <figcaption>
-              <span class="reviewer">Courage</span>
-              <span class="reviewer-role">Staff Engineer</span>
-            </figcaption>
-          </figure>
-          <figure class="review-card">
-            <blockquote>
-              "As an instructor and TA, Madhu was clear, concise, and prepared. She played a big part
-              in the course's success."
-            </blockquote>
-            <figcaption>
-              <span class="reviewer">Jhanae</span>
-              <span class="reviewer-role">Education Program Manager, Tech Learning</span>
-            </figcaption>
-          </figure>
-          <figure class="review-card">
-            <blockquote>
-              "You are a pleasure to work with: patient when pairing, open to others' ideas, and great
-              at helping teammates ramp up quickly."
-            </blockquote>
-            <figcaption>
-              <span class="reviewer">Lindsey</span>
-              <span class="reviewer-role">Consultant</span>
-            </figcaption>
-          </figure>
+        <div class="reviews-carousel" data-review-carousel data-scroll-speed="72">
+          <div class="reviews-viewport" data-review-viewport aria-label="Scrolling coworker review highlights">
+            <div class="reviews-track" data-review-track>
+              <figure class="review-card review-card--stellar" data-review-slide>
+                <blockquote>
+                  <strong class="review-highlight"
+                    >"One of your superpowers is diagnosing, refining, and empathizing with customers' needs,
+                    even in high-stakes projects under time pressure."</strong
+                  >
+                </blockquote>
+                <figcaption>
+                  <span class="reviewer">Madeleine</span>
+                  <span class="reviewer-role">Product Manager</span>
+                </figcaption>
+              </figure>
+              <figure class="review-card review-card--stellar" data-review-slide>
+                <blockquote>
+                  <strong class="review-highlight"
+                    >"Your ability to get up to speed with a system, assume ownership, and answer questions
+                    about it is unrivaled."</strong
+                  >
+                </blockquote>
+                <figcaption>
+                  <span class="reviewer">William</span>
+                  <span class="reviewer-role">Senior Engineer</span>
+                </figcaption>
+              </figure>
+              <figure class="review-card review-card--stellar" data-review-slide>
+                <blockquote>
+                  <strong class="review-highlight"
+                    >"You organized swarms around Holocron and ClickHouse that led to solutions and knowledge
+                    sharing, and led both workstreams ahead of schedule."</strong
+                  >
+                </blockquote>
+                <figcaption>
+                  <span class="reviewer">Courage</span>
+                  <span class="reviewer-role">Staff Engineer</span>
+                </figcaption>
+              </figure>
+              <figure class="review-card review-card--stellar" data-review-slide>
+                <blockquote>
+                  <strong class="review-highlight"
+                    >"Madhu clearly documented complex legacy pipelines and presented a solution that was
+                    understandable for both domain experts and non-technical partners."</strong
+                  >
+                </blockquote>
+                <figcaption>
+                  <span class="reviewer">Bennett</span>
+                  <span class="reviewer-role">Product Manager</span>
+                </figcaption>
+              </figure>
+              <figure class="review-card" data-review-slide>
+                <blockquote>
+                  "A steady pair of hands who can accomplish tasks quickly and surface risks that deserve
+                  the team's attention."
+                </blockquote>
+                <figcaption>
+                  <span class="reviewer">Austin</span>
+                  <span class="reviewer-role">Consultant</span>
+                </figcaption>
+              </figure>
+              <figure class="review-card" data-review-slide>
+                <blockquote>
+                  "Patient when pairing, open to other points of view, and a pleasure to write code with."
+                </blockquote>
+                <figcaption>
+                  <span class="reviewer">Lindsey</span>
+                  <span class="reviewer-role">Consultant</span>
+                </figcaption>
+              </figure>
+              <figure class="review-card" data-review-slide>
+                <blockquote>
+                  "A great resource who responded quickly to questions and followed up by adding API support
+                  for specific needs."
+                </blockquote>
+                <figcaption>
+                  <span class="reviewer">Annie</span>
+                  <span class="reviewer-role">Data Engineer</span>
+                </figcaption>
+              </figure>
+              <figure class="review-card" data-review-slide>
+                <blockquote>
+                  "She did a great job onboarding our team and was actively involved in load testing to help
+                  resolve latency concerns."
+                </blockquote>
+                <figcaption>
+                  <span class="reviewer">Eileen</span>
+                  <span class="reviewer-role">Backend Engineer</span>
+                </figcaption>
+              </figure>
+              <figure class="review-card" data-review-slide>
+                <blockquote>
+                  "Provided docs and quick responses, jumped in whenever we hit a roadblock, and wrote
+                  strong first-pass PRs with clear handoff docs."
+                </blockquote>
+                <figcaption>
+                  <span class="reviewer">Abby</span>
+                  <span class="reviewer-role">Senior Engineer</span>
+                </figcaption>
+              </figure>
+              <figure class="review-card" data-review-slide>
+                <blockquote>
+                  "As an instructor and TA, Madhu was clear, concise, and prepared, and played a big part
+                  in the course's success."
+                </blockquote>
+                <figcaption>
+                  <span class="reviewer">Jhanae</span>
+                  <span class="reviewer-role">Education Program Manager</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -123,12 +186,28 @@
         </div>
         <div class="education-grid">
           <article>
-            <h3>Princeton University</h3>
+            <h3 class="org-title">
+              <img
+                class="org-logo"
+                src="https://www.google.com/s2/favicons?sz=128&domain_url=princeton.edu"
+                alt="Princeton University logo"
+                loading="lazy"
+              />
+              <a class="org-link" href="https://www.princeton.edu/" target="_blank" rel="noreferrer noopener">Princeton University</a>
+            </h3>
             <p>M.S. in Computer Science</p>
             <span>Sep 2012 - Jun 2014</span>
           </article>
           <article>
-            <h3>Cornell University</h3>
+            <h3 class="org-title">
+              <img
+                class="org-logo"
+                src="https://www.google.com/s2/favicons?sz=128&domain_url=cornell.edu"
+                alt="Cornell University logo"
+                loading="lazy"
+              />
+              <a class="org-link" href="https://www.cornell.edu/" target="_blank" rel="noreferrer noopener">Cornell University</a>
+            </h3>
             <p>B.S. in Computer Science</p>
             <p>Hunter Rawlings Presidential Research Scholar</p>
             <span>Sep 2008 - Jun 2012</span>
@@ -138,27 +217,17 @@
 
       <section id="experience" class="section container metrics reveal" aria-label="Experience summary">
         <p class="summary-group-title">Career Trajectory</p>
-        <div class="fulltime-summaries" aria-label="Full-time role summary">
-          <article class="fulltime-card">
-            <h3>Capital One</h3>
-            <p class="snapshot-role">Senior Software Engineer, Fulfillment Engineering</p>
-            <p class="snapshot-years">Jan 2025 - Present</p>
-            <p class="snapshot-note">
-              Building AWS fulfillment microservices with Lambda, Step Functions, DynamoDB, and resilient
-              service integrations.
-            </p>
-          </article>
-          <article class="fulltime-card">
-            <h3>Spotify</h3>
-            <p class="snapshot-role">Tech Owner &amp; Senior Software Engineer, Data &amp; Backend</p>
-            <p class="snapshot-years">Aug 2020 - Dec 2024</p>
-            <p class="snapshot-note">
-              Delivered large-scale analytics platforms for Spotify for Artists, including high-volume data
-              pipelines and cost-efficient infrastructure.
-            </p>
-          </article>
-          <article class="fulltime-card">
-            <h3>Yext</h3>
+        <div class="trajectory-track" aria-label="Full-time role trajectory">
+          <article class="trajectory-step">
+            <h3 class="org-title">
+              <img
+                class="org-logo"
+                src="https://www.google.com/s2/favicons?sz=128&domain_url=yext.com"
+                alt="Yext logo"
+                loading="lazy"
+              />
+              <a class="org-link" href="https://www.yext.com/" target="_blank" rel="noreferrer noopener">Yext</a>
+            </h3>
             <p class="snapshot-role">Software Engineer, Full-Stack</p>
             <p class="snapshot-years">Jul 2014 - Jul 2020</p>
             <p class="snapshot-note">
@@ -166,22 +235,80 @@
               and subsequent public-company scale.
             </p>
           </article>
+          <article class="trajectory-step">
+            <h3 class="org-title">
+              <img
+                class="org-logo"
+                src="https://www.google.com/s2/favicons?sz=128&domain_url=spotify.com"
+                alt="Spotify logo"
+                loading="lazy"
+              />
+              <a class="org-link" href="https://www.spotify.com/" target="_blank" rel="noreferrer noopener">Spotify</a>
+            </h3>
+            <p class="snapshot-role">Tech Owner &amp; Senior Software Engineer, Data &amp; Backend</p>
+            <p class="snapshot-years">Aug 2020 - Jan 2025</p>
+            <p class="snapshot-note">
+              Delivered large-scale analytics platforms for Spotify for Artists, including high-volume data
+              pipelines and cost-efficient infrastructure.
+            </p>
+          </article>
+          <article class="trajectory-step trajectory-step-current">
+            <h3 class="org-title">
+              <img
+                class="org-logo"
+                src="https://www.google.com/s2/favicons?sz=128&domain_url=capitalone.com"
+                alt="Capital One logo"
+                loading="lazy"
+              />
+              <a class="org-link" href="https://www.capitalone.com/" target="_blank" rel="noreferrer noopener">Capital One</a>
+            </h3>
+            <p class="snapshot-role">Senior Software Engineer, Fulfillment Engineering</p>
+            <p class="snapshot-years">Feb 2025 - Present</p>
+            <p class="snapshot-note">
+              Building AWS fulfillment microservices with Lambda, Step Functions, DynamoDB, and resilient
+              service integrations.
+            </p>
+          </article>
         </div>
 
         <p class="summary-group-title internship-title">Internships</p>
         <div class="internship-summaries" aria-label="Internship summary">
           <article class="internship-card">
-            <p class="internship-name">Arista Networks</p>
+            <p class="internship-name org-title">
+              <img
+                class="org-logo"
+                src="https://www.google.com/s2/favicons?sz=128&domain_url=arista.com"
+                alt="Arista Networks logo"
+                loading="lazy"
+              />
+              <a class="org-link" href="https://www.arista.com/" target="_blank" rel="noreferrer noopener">Arista Networks</a>
+            </p>
             <p class="internship-role">Software Engineer Intern</p>
             <p class="internship-years">Jun 2012 - Sep 2012</p>
           </article>
           <article class="internship-card">
-            <p class="internship-name">Deutsche Bank</p>
+            <p class="internship-name org-title">
+              <img
+                class="org-logo"
+                src="https://www.google.com/s2/favicons?sz=128&domain_url=db.com"
+                alt="Deutsche Bank logo"
+                loading="lazy"
+              />
+              <a class="org-link" href="https://www.db.com/" target="_blank" rel="noreferrer noopener">Deutsche Bank</a>
+            </p>
             <p class="internship-role">Technology Analyst Intern</p>
             <p class="internship-years">Jun 2011 - Aug 2011</p>
           </article>
           <article class="internship-card">
-            <p class="internship-name">Goldman Sachs</p>
+            <p class="internship-name org-title">
+              <img
+                class="org-logo"
+                src="https://www.google.com/s2/favicons?sz=128&domain_url=goldmansachs.com"
+                alt="Goldman Sachs logo"
+                loading="lazy"
+              />
+              <a class="org-link" href="https://www.goldmansachs.com/" target="_blank" rel="noreferrer noopener">Goldman Sachs</a>
+            </p>
             <p class="internship-role">Technology Analyst Intern</p>
             <p class="internship-years">Aug 2010 - Dec 2010</p>
           </article>
@@ -197,9 +324,17 @@
         <div class="timeline">
           <article class="timeline-item">
             <header>
-              <h3>Capital One</h3>
+              <h3 class="org-title">
+                <img
+                  class="org-logo"
+                  src="https://www.google.com/s2/favicons?sz=128&domain_url=capitalone.com"
+                  alt="Capital One logo"
+                  loading="lazy"
+                />
+                <a class="org-link" href="https://www.capitalone.com/" target="_blank" rel="noreferrer noopener">Capital One</a>
+              </h3>
               <p>Senior Software Engineer, Fulfillment Engineering</p>
-              <span>Jan 2025 - Present</span>
+              <span>Feb 2025 - Present</span>
             </header>
             <ul>
               <li>
@@ -219,9 +354,17 @@
 
           <article class="timeline-item">
             <header>
-              <h3>Spotify</h3>
+              <h3 class="org-title">
+                <img
+                  class="org-logo"
+                  src="https://www.google.com/s2/favicons?sz=128&domain_url=spotify.com"
+                  alt="Spotify logo"
+                  loading="lazy"
+                />
+                <a class="org-link" href="https://www.spotify.com/" target="_blank" rel="noreferrer noopener">Spotify</a>
+              </h3>
               <p>Tech Owner &amp; Senior Software Engineer, Data &amp; Backend</p>
-              <span>Aug 2020 - Dec 2024</span>
+              <span>Aug 2020 - Jan 2025</span>
             </header>
             <ul>
               <li>
@@ -247,7 +390,15 @@
 
           <article class="timeline-item">
             <header>
-              <h3>Yext</h3>
+              <h3 class="org-title">
+                <img
+                  class="org-logo"
+                  src="https://www.google.com/s2/favicons?sz=128&domain_url=yext.com"
+                  alt="Yext logo"
+                  loading="lazy"
+                />
+                <a class="org-link" href="https://www.yext.com/" target="_blank" rel="noreferrer noopener">Yext</a>
+              </h3>
               <p>Software Engineer, Full-Stack</p>
               <span>Jul 2014 - Jul 2020</span>
             </header>
@@ -273,7 +424,15 @@
 
           <article class="timeline-item">
             <header>
-              <h3>Princeton University</h3>
+              <h3 class="org-title">
+                <img
+                  class="org-logo"
+                  src="https://www.google.com/s2/favicons?sz=128&domain_url=princeton.edu"
+                  alt="Princeton University logo"
+                  loading="lazy"
+                />
+                <a class="org-link" href="https://www.princeton.edu/" target="_blank" rel="noreferrer noopener">Princeton University</a>
+              </h3>
               <p>Teaching Assistant</p>
               <span>Sep 2012 - Jun 2014</span>
             </header>
@@ -298,38 +457,421 @@
         </div>
 
         <div class="skills-grid">
+          <article class="skills-featured skills-featured--ai">
+            <h3>AI</h3>
+            <div class="ai-subsections">
+              <section class="ai-subsection">
+                <h4>Assistants & Coding Agents</h4>
+                <ul class="skill-list" aria-label="AI assistants and coding agents">
+                  <li>
+                    <a class="skill-chip" href="https://gemini.google.com/" target="_blank" rel="noreferrer noopener">
+                      <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=gemini.google.com" alt="" loading="lazy" />
+                      <span>Gemini</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="skill-chip" href="https://chatgpt.com/" target="_blank" rel="noreferrer noopener">
+                      <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=chatgpt.com" alt="" loading="lazy" />
+                      <span>ChatGPT</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="skill-chip" href="https://openai.com/codex/" target="_blank" rel="noreferrer noopener">
+                      <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=openai.com" alt="" loading="lazy" />
+                      <span>CodeX</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="skill-chip" href="https://www.anthropic.com/claude" target="_blank" rel="noreferrer noopener">
+                      <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=anthropic.com" alt="" loading="lazy" />
+                      <span>Claude</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="skill-chip" href="https://windsurf.com/" target="_blank" rel="noreferrer noopener">
+                      <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=windsurf.com" alt="" loading="lazy" />
+                      <span>Windsurf</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="skill-chip" href="https://replit.com/" target="_blank" rel="noreferrer noopener">
+                      <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=replit.com" alt="" loading="lazy" />
+                      <span>Replit</span>
+                    </a>
+                  </li>
+                </ul>
+              </section>
+
+              <section class="ai-subsection">
+                <h4>Model Ecosystem</h4>
+                <ul class="skill-list" aria-label="AI model ecosystem">
+                  <li>
+                    <a class="skill-chip" href="https://kimi.com/" target="_blank" rel="noreferrer noopener">
+                      <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=kimi.com" alt="" loading="lazy" />
+                      <span>KimiK</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="skill-chip" href="https://www.deepseek.com/" target="_blank" rel="noreferrer noopener">
+                      <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=deepseek.com" alt="" loading="lazy" />
+                      <span>DeepSeek</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="skill-chip" href="https://ai.meta.com/llama/" target="_blank" rel="noreferrer noopener">
+                      <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=meta.com" alt="" loading="lazy" />
+                      <span>Llama</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="skill-chip" href="https://mistral.ai/" target="_blank" rel="noreferrer noopener">
+                      <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=mistral.ai" alt="" loading="lazy" />
+                      <span>Mistral</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="skill-chip" href="https://huggingface.co/" target="_blank" rel="noreferrer noopener">
+                      <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=huggingface.co" alt="" loading="lazy" />
+                      <span>Hugging Face</span>
+                    </a>
+                  </li>
+                </ul>
+              </section>
+
+              <section class="ai-subsection">
+                <h4>Frameworks & Observability</h4>
+                <ul class="skill-list" aria-label="AI frameworks and observability">
+                  <li>
+                    <a class="skill-chip" href="https://www.langchain.com/" target="_blank" rel="noreferrer noopener">
+                      <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=langchain.com" alt="" loading="lazy" />
+                      <span>LangChain</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="skill-chip" href="https://langfuse.com/" target="_blank" rel="noreferrer noopener">
+                      <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=langfuse.com" alt="" loading="lazy" />
+                      <span>Langfuse</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="skill-chip" href="https://jupyter.org/" target="_blank" rel="noreferrer noopener">
+                      <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=jupyter.org" alt="" loading="lazy" />
+                      <span>Jupyter Notebooks</span>
+                    </a>
+                  </li>
+                </ul>
+              </section>
+
+              <section class="ai-subsection">
+                <h4>Adaptation & Tuning</h4>
+                <ul class="skill-list" aria-label="AI adaptation and tuning">
+                  <li>
+                    <a class="skill-chip" href="https://huggingface.co/docs/peft/index" target="_blank" rel="noreferrer noopener">
+                      <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=huggingface.co" alt="" loading="lazy" />
+                      <span>PEFT</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="skill-chip" href="https://arxiv.org/abs/2106.09685" target="_blank" rel="noreferrer noopener">
+                      <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=arxiv.org" alt="" loading="lazy" />
+                      <span>LoRA</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="skill-chip" href="https://arxiv.org/abs/2305.14314" target="_blank" rel="noreferrer noopener">
+                      <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=arxiv.org" alt="" loading="lazy" />
+                      <span>QLoRA</span>
+                    </a>
+                  </li>
+                  <li>
+                    <span class="skill-chip skill-chip--plain">
+                      <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=python.org" alt="" loading="lazy" />
+                      <span>Python data libraries</span>
+                    </span>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </article>
           <article>
             <h3>Languages & APIs</h3>
-            <p>Java, Go, Python, Scala, C, SQL, Bash, REST, SOAP</p>
+            <ul class="skill-list" aria-label="Languages and APIs">
+              <li>
+                <a class="skill-chip" href="https://www.java.com/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=java.com" alt="" loading="lazy" />
+                  <span>Java</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://go.dev/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=go.dev" alt="" loading="lazy" />
+                  <span>Go</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://www.python.org/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=python.org" alt="" loading="lazy" />
+                  <span>Python</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://www.scala-lang.org/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=scala-lang.org" alt="" loading="lazy" />
+                  <span>Scala</span>
+                </a>
+              </li>
+              <li><span class="skill-chip skill-chip--plain"><span>C</span></span></li>
+              <li><span class="skill-chip skill-chip--plain"><span>SQL</span></span></li>
+              <li>
+                <a class="skill-chip" href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=gnu.org" alt="" loading="lazy" />
+                  <span>Bash</span>
+                </a>
+              </li>
+              <li><span class="skill-chip skill-chip--plain"><span>REST</span></span></li>
+              <li><span class="skill-chip skill-chip--plain"><span>SOAP</span></span></li>
+            </ul>
           </article>
           <article>
             <h3>AWS & Cloud</h3>
-            <p>
-              Lambda, Step Functions, DynamoDB, GCP, Terraform, Docker, Kubernetes, Helm, SageMaker,
-              Bedrock
-            </p>
+            <ul class="skill-list" aria-label="AWS and Cloud tooling">
+              <li>
+                <a class="skill-chip" href="https://aws.amazon.com/lambda/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=aws.amazon.com" alt="" loading="lazy" />
+                  <span>Lambda</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://aws.amazon.com/step-functions/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=aws.amazon.com" alt="" loading="lazy" />
+                  <span>Step Functions</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://aws.amazon.com/dynamodb/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=aws.amazon.com" alt="" loading="lazy" />
+                  <span>DynamoDB</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://cloud.google.com/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=cloud.google.com" alt="" loading="lazy" />
+                  <span>GCP</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://www.terraform.io/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=terraform.io" alt="" loading="lazy" />
+                  <span>Terraform</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://www.docker.com/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=docker.com" alt="" loading="lazy" />
+                  <span>Docker</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://kubernetes.io/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=kubernetes.io" alt="" loading="lazy" />
+                  <span>Kubernetes</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://helm.sh/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=helm.sh" alt="" loading="lazy" />
+                  <span>Helm</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://aws.amazon.com/sagemaker/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=aws.amazon.com" alt="" loading="lazy" />
+                  <span>SageMaker</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://aws.amazon.com/bedrock/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=aws.amazon.com" alt="" loading="lazy" />
+                  <span>Bedrock</span>
+                </a>
+              </li>
+            </ul>
           </article>
           <article>
             <h3>Data Platforms</h3>
-            <p>
-              ClickHouse, Druid, Redshift, BigTable, BigQuery, Postgres, MySQL, Elasticsearch, Redis,
-              Snowflake, Databricks
-            </p>
-          </article>
-          <article>
-            <h3>AI/ML</h3>
-            <p>Gemini, ChatGPT, Jupyter Notebooks, LangChain, Hugging Face, Python data libraries</p>
+            <ul class="skill-list" aria-label="Data platforms">
+              <li>
+                <a class="skill-chip" href="https://clickhouse.com/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=clickhouse.com" alt="" loading="lazy" />
+                  <span>ClickHouse</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://druid.apache.org/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=apache.org" alt="" loading="lazy" />
+                  <span>Druid</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://aws.amazon.com/redshift/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=aws.amazon.com" alt="" loading="lazy" />
+                  <span>Redshift</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://cloud.google.com/bigtable" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=cloud.google.com" alt="" loading="lazy" />
+                  <span>BigTable</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://cloud.google.com/bigquery" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=cloud.google.com" alt="" loading="lazy" />
+                  <span>BigQuery</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://www.postgresql.org/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=postgresql.org" alt="" loading="lazy" />
+                  <span>Postgres</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://www.mysql.com/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=mysql.com" alt="" loading="lazy" />
+                  <span>MySQL</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://www.elastic.co/elasticsearch/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=elastic.co" alt="" loading="lazy" />
+                  <span>Elasticsearch</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://redis.io/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=redis.io" alt="" loading="lazy" />
+                  <span>Redis</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://www.snowflake.com/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=snowflake.com" alt="" loading="lazy" />
+                  <span>Snowflake</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://www.databricks.com/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=databricks.com" alt="" loading="lazy" />
+                  <span>Databricks</span>
+                </a>
+              </li>
+            </ul>
           </article>
           <article>
             <h3>DevOps & Reliability</h3>
-            <p>CI/CD, Jenkins, Maven, Bazel, Artifactory, Git, PagerDuty, Splunk, New Relic</p>
+            <ul class="skill-list" aria-label="DevOps and reliability tools">
+              <li><span class="skill-chip skill-chip--plain"><span>CI/CD</span></span></li>
+              <li>
+                <a class="skill-chip" href="https://www.jenkins.io/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=jenkins.io" alt="" loading="lazy" />
+                  <span>Jenkins</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://maven.apache.org/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=apache.org" alt="" loading="lazy" />
+                  <span>Maven</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://bazel.build/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=bazel.build" alt="" loading="lazy" />
+                  <span>Bazel</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://jfrog.com/artifactory/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=jfrog.com" alt="" loading="lazy" />
+                  <span>Artifactory</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://git-scm.com/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=git-scm.com" alt="" loading="lazy" />
+                  <span>Git</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://www.pagerduty.com/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=pagerduty.com" alt="" loading="lazy" />
+                  <span>PagerDuty</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://www.splunk.com/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=splunk.com" alt="" loading="lazy" />
+                  <span>Splunk</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://newrelic.com/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=newrelic.com" alt="" loading="lazy" />
+                  <span>New Relic</span>
+                </a>
+              </li>
+            </ul>
           </article>
           <article>
             <h3>Tooling & Platforms</h3>
-            <p>
-              GitHub, JIRA, IntelliJ, Visual Studio, Eclipse, Terminal, Chariot, Maestro, QuickInsights,
-              Graffiti, OneLake
-            </p>
+            <ul class="skill-list" aria-label="Tooling and platforms">
+              <li>
+                <a class="skill-chip" href="https://github.com/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=github.com" alt="" loading="lazy" />
+                  <span>GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://www.atlassian.com/software/jira" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=atlassian.com" alt="" loading="lazy" />
+                  <span>JIRA</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://www.jetbrains.com/idea/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=jetbrains.com" alt="" loading="lazy" />
+                  <span>IntelliJ</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://visualstudio.microsoft.com/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=microsoft.com" alt="" loading="lazy" />
+                  <span>Visual Studio</span>
+                </a>
+              </li>
+              <li>
+                <a class="skill-chip" href="https://eclipseide.org/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=eclipseide.org" alt="" loading="lazy" />
+                  <span>Eclipse</span>
+                </a>
+              </li>
+              <li><span class="skill-chip skill-chip--plain"><span>Terminal</span></span></li>
+              <li><span class="skill-chip skill-chip--plain"><span>Chariot</span></span></li>
+              <li>
+                <a class="skill-chip" href="https://maestro.mobile.dev/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=mobile.dev" alt="" loading="lazy" />
+                  <span>Maestro</span>
+                </a>
+              </li>
+              <li><span class="skill-chip skill-chip--plain"><span>QuickInsights</span></span></li>
+              <li><span class="skill-chip skill-chip--plain"><span>Graffiti</span></span></li>
+              <li>
+                <a class="skill-chip" href="https://learn.microsoft.com/en-us/fabric/onelake/" target="_blank" rel="noreferrer noopener">
+                  <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=microsoft.com" alt="" loading="lazy" />
+                  <span>OneLake</span>
+                </a>
+              </li>
+            </ul>
           </article>
         </div>
       </section>
@@ -341,12 +883,28 @@
         </div>
         <div class="early-grid">
           <article>
-            <h3>Princeton University</h3>
+            <h3 class="org-title">
+              <img
+                class="org-logo"
+                src="https://www.google.com/s2/favicons?sz=128&domain_url=princeton.edu"
+                alt="Princeton University logo"
+                loading="lazy"
+              />
+              <a class="org-link" href="https://www.princeton.edu/" target="_blank" rel="noreferrer noopener">Princeton University</a>
+            </h3>
             <p>Graduate Research, Mobile Bandwidth Reduction</p>
             <span>Jan 2013 - Jun 2014</span>
           </article>
           <article>
-            <h3>Cornell University</h3>
+            <h3 class="org-title">
+              <img
+                class="org-logo"
+                src="https://www.google.com/s2/favicons?sz=128&domain_url=cornell.edu"
+                alt="Cornell University logo"
+                loading="lazy"
+              />
+              <a class="org-link" href="https://www.cornell.edu/" target="_blank" rel="noreferrer noopener">Cornell University</a>
+            </h3>
             <p>Research Assistant, Machine Learning / NLP</p>
             <span>Jan 2010 - Dec 2011</span>
           </article>
@@ -356,9 +914,39 @@
       <section class="section section-certs container reveal certs" aria-label="Certifications and leadership">
         <article>
           <h2>Certifications</h2>
-          <ul>
-            <li>AWS Certified Solutions Architect - Associate</li>
-            <li>Secure Code Warrior (CSSE) Certification</li>
+          <ul class="cert-list">
+            <li class="cert-item">
+              <a
+                class="cert-link"
+                href="https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <img
+                  class="cert-logo"
+                  src="https://www.google.com/s2/favicons?sz=128&domain_url=aws.amazon.com"
+                  alt="AWS logo"
+                  loading="lazy"
+                />
+                <span>AWS Certified Solutions Architect - Associate</span>
+              </a>
+            </li>
+            <li class="cert-item">
+              <a
+                class="cert-link"
+                href="https://www.securecodewarrior.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <img
+                  class="cert-logo"
+                  src="https://www.google.com/s2/favicons?sz=128&domain_url=securecodewarrior.com"
+                  alt="Secure Code Warrior logo"
+                  loading="lazy"
+                />
+                <span>Secure Code Warrior (CSSE) Certification</span>
+              </a>
+            </li>
           </ul>
         </article>
 
@@ -367,20 +955,73 @@
           <ul>
             <li>Tech owner and mentor for engineering teams at Spotify</li>
             <li>Instructor for Spotify Data Engineering course (30 engineers taught)</li>
-            <li>Volunteer high school CS teacher with TEALS</li>
-            <li>Mentor/advisor with Built By Girls and Society of Women in Engineering</li>
+            <li>
+              Volunteer high school CS teacher with
+              <a class="org-link" href="https://www.microsoft.com/en-us/teals" target="_blank" rel="noreferrer noopener">TEALS</a>
+            </li>
+            <li>
+              Mentor/advisor with
+              <a class="org-link" href="https://www.builtbygirls.com/" target="_blank" rel="noreferrer noopener">Built By Girls</a>
+              and
+              <a class="org-link" href="https://www.swe.cornell.edu/" target="_blank" rel="noreferrer noopener">Society of Women in Engineering Cornell</a>
+            </li>
           </ul>
         </article>
       </section>
 
-      <section id="contact" class="section section-contact container contact contact-minimal reveal">
-        <div class="contact-card">
-          <a href="mailto:madhujayakumar101@gmail.com">madhujayakumar101@gmail.com</a>
-          <a class="linkedin-link" href="https://www.linkedin.com/in/madhu-jayakumar/" aria-label="LinkedIn profile of Madhu Jayakumar">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3.1A1.95 1.95 0 1 0 5.3 7a1.95 1.95 0 0 0-.05-3.9ZM20.44 13.42c0-3.08-1.64-5.01-4.3-5.01-1.99 0-2.88 1.09-3.37 1.86V8.5H9.39V20h3.38v-6.1c0-.33.03-.65.12-.89.26-.65.86-1.33 1.86-1.33 1.31 0 1.83.99 1.83 2.45V20H20v-6.58Z"/>
-            </svg>
-            <span>Madhu Jayakumar</span>
+      <section id="contact" class="section section-contact container contact reveal">
+        <div class="contact-intro">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's Connect</h2>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-tile contact-tile--email" href="mailto:madhujayakumar101@gmail.com" aria-label="Email Madhu Jayakumar">
+            <span class="contact-tile-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Zm1.8.5 7.2 5.6 7.2-5.6H4.8Zm14.7 10.5V8.7l-7 5.4a.8.8 0 0 1-1 0l-7-5.4v8.8h15Z"/>
+              </svg>
+            </span>
+            <span class="contact-tile-copy">
+              <span class="contact-tile-label">Email</span>
+              <span class="contact-tile-value">madhujayakumar101@gmail.com</span>
+            </span>
+            <span class="contact-tile-action">Write</span>
+          </a>
+          <a class="contact-tile contact-tile--linkedin" href="https://www.linkedin.com/in/madhu-jayakumar/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn profile of Madhu Jayakumar">
+            <span class="contact-tile-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3.1A1.95 1.95 0 1 0 5.3 7a1.95 1.95 0 0 0-.05-3.9ZM20.44 13.42c0-3.08-1.64-5.01-4.3-5.01-1.99 0-2.88 1.09-3.37 1.86V8.5H9.39V20h3.38v-6.1c0-.33.03-.65.12-.89.26-.65.86-1.33 1.86-1.33 1.31 0 1.83.99 1.83 2.45V20H20v-6.58Z"/>
+              </svg>
+            </span>
+            <span class="contact-tile-copy">
+              <span class="contact-tile-label">LinkedIn</span>
+              <span class="contact-tile-value">linkedin.com/in/madhu-jayakumar</span>
+            </span>
+            <span class="contact-tile-action">Connect</span>
+          </a>
+          <a class="contact-tile contact-tile--github" href="https://github.com/madhu-ai-ml" target="_blank" rel="noreferrer noopener" aria-label="GitHub profile of Madhu Jayakumar">
+            <span class="contact-tile-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M12 .5A12 12 0 0 0 8.2 23.9c.6.1.8-.2.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.6-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.4-1.3-5.4-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.2 11.2 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.8 5.6-5.4 5.9.4.4.8 1.1.8 2.3v3.4c0 .4.2.7.8.6A12 12 0 0 0 12 .5Z"/>
+              </svg>
+            </span>
+            <span class="contact-tile-copy">
+              <span class="contact-tile-label">GitHub</span>
+              <span class="contact-tile-value">github.com/madhu-ai-ml</span>
+            </span>
+            <span class="contact-tile-action">Explore</span>
+          </a>
+          <a class="contact-tile contact-tile--x" href="https://x.com/madhu_jayakumar" target="_blank" rel="noreferrer noopener" aria-label="X profile of Madhu Jayakumar">
+            <span class="contact-tile-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.8-6.3L6.6 22H3.5l7.3-8.4L2 2h6.3l4.3 5.7L18.9 2Zm-1.1 18h1.7L7.3 3.9H5.5L17.8 20Z"/>
+              </svg>
+            </span>
+            <span class="contact-tile-copy">
+              <span class="contact-tile-label">X</span>
+              <span class="contact-tile-value">x.com/madhu_jayakumar</span>
+            </span>
+            <span class="contact-tile-action">Follow</span>
           </a>
         </div>
       </section>
