@@ -647,10 +647,6 @@ p {
   background: var(--accent-olive);
 }
 
-.trajectory-step-current .snapshot-years {
-  color: var(--accent-olive);
-}
-
 .trajectory-step h3 {
   color: var(--ink);
 }
