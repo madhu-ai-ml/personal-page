@@ -348,30 +348,42 @@ p {
 }
 
 .btn-ghost {
-  background: transparent;
-  color: var(--ink);
-  border-color: var(--line-strong);
+  background: var(--surface-tint);
+  color: var(--ink-soft);
+  border-color: rgba(111, 102, 93, 0.3);
+  border-top: 1px solid var(--line-strong);
+  border-radius: 1px;
+  box-shadow: var(--shadow-soft);
 }
 
 .btn-ghost:hover {
-  border-color: var(--accent-terracotta);
-  color: var(--accent-terracotta);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-soft);
+  background: var(--surface);
+  border-color: rgba(111, 102, 93, 0.38);
+  border-top-color: var(--line-strong);
+  color: var(--ink);
+  transform: translateY(0);
+  box-shadow: var(--shadow);
 }
 
 .btn-contact {
-  background: rgba(111, 123, 100, 0.1);
-  color: var(--accent-olive);
-  border-color: rgba(111, 123, 100, 0.4);
+  color: var(--ink-soft);
+  border-color: var(--tone-warm-taupe-border);
+  border-radius: 18px;
+  padding-inline: 1.36rem;
+  background:
+    radial-gradient(circle at 88% 10%, rgba(125, 76, 80, 0.12), transparent 42%),
+    linear-gradient(156deg, var(--tone-bone) 0%, var(--tone-ashen) 100%);
+  box-shadow: var(--shadow-soft);
 }
 
 .btn-contact:hover {
-  background: rgba(111, 123, 100, 0.2);
-  border-color: var(--accent-olive);
-  color: #44503d;
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-soft);
+  background:
+    radial-gradient(circle at 88% 10%, rgba(125, 76, 80, 0.16), transparent 42%),
+    linear-gradient(156deg, #f8efe2 0%, #e6d7c4 100%);
+  border-color: rgba(168, 106, 79, 0.62);
+  color: var(--ink-soft);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
 }
 
 .hero-panel {
