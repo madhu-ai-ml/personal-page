@@ -1438,6 +1438,64 @@ p {
   opacity: 0.82;
 }
 
+.reveal .hero-panel,
+.reveal .education-grid > article,
+.reveal .trajectory-track > .trajectory-step,
+.reveal .internship-summaries > .internship-card,
+.reveal .timeline > .timeline-item,
+.reveal .skills-grid > article,
+.reveal .early-grid > article,
+.reveal.section-certs > article {
+  opacity: 0;
+  transform: translateY(20px) scale(0.985);
+  transition:
+    opacity 520ms ease,
+    transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: 90ms;
+}
+
+.reveal.is-visible .hero-panel,
+.reveal.is-visible .education-grid > article,
+.reveal.is-visible .trajectory-track > .trajectory-step,
+.reveal.is-visible .internship-summaries > .internship-card,
+.reveal.is-visible .timeline > .timeline-item,
+.reveal.is-visible .skills-grid > article,
+.reveal.is-visible .early-grid > article,
+.reveal.section-certs.is-visible > article {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.reveal .education-grid > article:nth-child(4n + 2),
+.reveal .trajectory-track > .trajectory-step:nth-child(4n + 2),
+.reveal .internship-summaries > .internship-card:nth-child(4n + 2),
+.reveal .timeline > .timeline-item:nth-child(4n + 2),
+.reveal .skills-grid > article:nth-child(4n + 2),
+.reveal .early-grid > article:nth-child(4n + 2),
+.reveal.section-certs > article:nth-child(4n + 2) {
+  transition-delay: 160ms;
+}
+
+.reveal .education-grid > article:nth-child(4n + 3),
+.reveal .trajectory-track > .trajectory-step:nth-child(4n + 3),
+.reveal .internship-summaries > .internship-card:nth-child(4n + 3),
+.reveal .timeline > .timeline-item:nth-child(4n + 3),
+.reveal .skills-grid > article:nth-child(4n + 3),
+.reveal .early-grid > article:nth-child(4n + 3),
+.reveal.section-certs > article:nth-child(4n + 3) {
+  transition-delay: 230ms;
+}
+
+.reveal .education-grid > article:nth-child(4n + 4),
+.reveal .trajectory-track > .trajectory-step:nth-child(4n + 4),
+.reveal .internship-summaries > .internship-card:nth-child(4n + 4),
+.reveal .timeline > .timeline-item:nth-child(4n + 4),
+.reveal .skills-grid > article:nth-child(4n + 4),
+.reveal .early-grid > article:nth-child(4n + 4),
+.reveal.section-certs > article:nth-child(4n + 4) {
+  transition-delay: 300ms;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(14px);
@@ -1605,12 +1663,28 @@ p {
   .btn,
   .top-nav a,
   .floating-contact-link,
+  .reveal .hero-panel,
+  .reveal .education-grid > article,
+  .reveal .trajectory-track > .trajectory-step,
+  .reveal .internship-summaries > .internship-card,
+  .reveal .timeline > .timeline-item,
+  .reveal .skills-grid > article,
+  .reveal .early-grid > article,
+  .reveal.section-certs > article,
   .section-contact .contact-intro,
   .section-contact .contact-tile {
     transition: none;
     animation: none;
   }
 
+  .reveal .hero-panel,
+  .reveal .education-grid > article,
+  .reveal .trajectory-track > .trajectory-step,
+  .reveal .internship-summaries > .internship-card,
+  .reveal .timeline > .timeline-item,
+  .reveal .skills-grid > article,
+  .reveal .early-grid > article,
+  .reveal.section-certs > article,
   .section-contact .contact-intro,
   .section-contact .contact-tile {
     opacity: 1;
