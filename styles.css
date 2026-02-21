@@ -1363,9 +1363,9 @@ p {
 }
 
 .contact-tile--email .contact-tile-action {
-  color: #4f4a44;
-  border-color: rgba(111, 102, 93, 0.3);
-  background: #ffffff;
+  color: #ffffff;
+  border-color: #4f4a44;
+  background: #4f4a44;
 }
 
 .contact-tile--linkedin .contact-tile-icon {
@@ -1379,9 +1379,9 @@ p {
 }
 
 .contact-tile--linkedin .contact-tile-action {
-  color: var(--brand-linkedin);
-  border-color: rgba(10, 102, 194, 0.34);
-  background: #eaf4fe;
+  color: #ffffff;
+  border-color: var(--brand-linkedin);
+  background: var(--brand-linkedin);
 }
 
 .contact-tile--github .contact-tile-icon {
@@ -1395,9 +1395,9 @@ p {
 }
 
 .contact-tile--github .contact-tile-action {
-  color: var(--brand-github);
-  border-color: rgba(24, 23, 23, 0.24);
-  background: #f3f4f6;
+  color: #ffffff;
+  border-color: var(--brand-github);
+  background: var(--brand-github);
 }
 
 .contact-tile--x .contact-tile-icon {
@@ -1411,9 +1411,9 @@ p {
 }
 
 .contact-tile--x .contact-tile-action {
-  color: var(--brand-x);
-  border-color: rgba(0, 0, 0, 0.24);
-  background: #f4f4f4;
+  color: #ffffff;
+  border-color: var(--brand-x);
+  background: var(--brand-x);
 }
 
 .site-footer {
