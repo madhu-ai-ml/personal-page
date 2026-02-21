@@ -46,7 +46,9 @@ if (navLinks.length > 0 && sectionById.length > 0 && "IntersectionObserver" in w
       });
     },
     {
-      threshold: 0.35,
+      // Long sections (for example, Technical Skills) may never hit a high
+      // intersection ratio inside this narrowed root margin.
+      threshold: 0.01,
       rootMargin: "-20% 0px -55% 0px",
     },
   );
