@@ -1273,9 +1273,7 @@ p {
   padding: 0.9rem 0.96rem;
   border: 1px solid var(--tone-warm-taupe-border);
   border-radius: 18px;
-  background:
-    radial-gradient(circle at 88% 10%, rgba(125, 76, 80, 0.12), transparent 42%),
-    linear-gradient(156deg, var(--tone-bone) 0%, var(--tone-ashen) 100%);
+  background: #ece0d1;
   box-shadow: var(--shadow-soft);
   transition:
     border-color 180ms ease,
@@ -1289,9 +1287,7 @@ p {
   border-color: rgba(168, 106, 79, 0.62);
   transform: translateY(-2px);
   box-shadow: var(--shadow);
-  background:
-    radial-gradient(circle at 88% 10%, rgba(125, 76, 80, 0.16), transparent 42%),
-    linear-gradient(156deg, #f8efe2 0%, #e6d7c4 100%);
+  background: #f1e6d8;
 }
 
 .contact-tile:focus-visible {
@@ -1368,8 +1364,8 @@ p {
 
 .contact-tile--email .contact-tile-action {
   color: #4f4a44;
-  border-color: rgba(111, 102, 93, 0.4);
-  background: #f3ede3;
+  border-color: rgba(111, 102, 93, 0.3);
+  background: #ffffff;
 }
 
 .contact-tile--linkedin .contact-tile-icon {
