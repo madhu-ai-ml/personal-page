@@ -410,6 +410,25 @@ p {
   display: none;
 }
 
+.hero-headshot {
+  margin: 0 0 1.1rem;
+  border: 1px solid rgba(240, 233, 222, 0.28);
+  border-top-color: rgba(240, 233, 222, 0.46);
+  background: linear-gradient(170deg, rgba(30, 29, 26, 0.9) 0%, rgba(17, 16, 15, 0.9) 100%);
+  box-shadow:
+    0 14px 24px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.hero-headshot img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .hero-panel h2 {
   font-family: "Instrument Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: var(--metal-soft);
