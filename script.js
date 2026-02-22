@@ -3,6 +3,14 @@ if (yearNode) {
   yearNode.textContent = new Date().getFullYear();
 }
 
+const hasMatchMedia = typeof window.matchMedia === "function";
+const reducedMotionQuery = hasMatchMedia
+  ? window.matchMedia("(prefers-reduced-motion: reduce)")
+  : { matches: false };
+const hoverPauseQuery = hasMatchMedia
+  ? window.matchMedia("(hover: hover) and (pointer: fine)")
+  : { matches: false };
+
 const revealNodes = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver(
@@ -46,24 +54,76 @@ if (navLinks.length > 0 && sectionById.length > 0 && "IntersectionObserver" in w
       });
     },
     {
-      // Long sections (for example, Technical Skills) may never hit a high
-      // intersection ratio inside this narrowed root margin.
       threshold: 0.01,
-      rootMargin: "-20% 0px -55% 0px",
+      rootMargin: "-22% 0px -54% 0px",
     },
   );
 
   sectionById.forEach((section) => activeObserver.observe(section));
 }
 
+const progressNode = document.querySelector(".scroll-progress span");
+if (progressNode) {
+  let progressTicking = false;
+
+  const updateProgress = () => {
+    const scrollTop = window.scrollY || window.pageYOffset;
+    const scrollable = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    const ratio = Math.min(1, Math.max(0, scrollTop / scrollable));
+    progressNode.style.setProperty("--scroll-progress", ratio.toFixed(4));
+  };
+
+  const onScroll = () => {
+    if (progressTicking) {
+      return;
+    }
+
+    progressTicking = true;
+    window.requestAnimationFrame(() => {
+      updateProgress();
+      progressTicking = false;
+    });
+  };
+
+  updateProgress();
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
+}
+
+const backdropNode = document.querySelector(".backdrop");
+if (backdropNode && !reducedMotionQuery.matches) {
+  let rafId = null;
+  let targetX = 0;
+  let targetY = 0;
+
+  const moveBackdrop = () => {
+    backdropNode.style.transform = `translate3d(${targetX}px, ${targetY}px, 0)`;
+    rafId = null;
+  };
+
+  const queueMove = () => {
+    if (rafId !== null) {
+      return;
+    }
+    rafId = window.requestAnimationFrame(moveBackdrop);
+  };
+
+  window.addEventListener("pointermove", (event) => {
+    const xRatio = event.clientX / window.innerWidth - 0.5;
+    const yRatio = event.clientY / window.innerHeight - 0.5;
+    targetX = xRatio * -10;
+    targetY = yRatio * -10;
+    queueMove();
+  });
+
+  window.addEventListener("pointerleave", () => {
+    targetX = 0;
+    targetY = 0;
+    queueMove();
+  });
+}
+
 const reviewCarousels = Array.from(document.querySelectorAll("[data-review-carousel]"));
-const hasMatchMedia = typeof window.matchMedia === "function";
-const reducedMotionQuery = hasMatchMedia
-  ? window.matchMedia("(prefers-reduced-motion: reduce)")
-  : { matches: false };
-const hoverPauseQuery = hasMatchMedia
-  ? window.matchMedia("(hover: hover) and (pointer: fine)")
-  : { matches: false };
 reviewCarousels.forEach((carousel) => {
   const viewport = carousel.querySelector("[data-review-viewport]");
   const track = carousel.querySelector("[data-review-track]");
@@ -80,7 +140,7 @@ reviewCarousels.forEach((carousel) => {
     track.appendChild(clone);
   });
 
-  const baseSpeed = Math.max(14, Number.parseFloat(carousel.dataset.scrollSpeed || "36"));
+  const baseSpeed = Math.max(16, Number.parseFloat(carousel.dataset.scrollSpeed || "36"));
   let cycleWidth = 0;
   let offset = 0;
   let lastTimestamp = 0;
@@ -169,6 +229,7 @@ reviewCarousels.forEach((carousel) => {
     if (!isDragging || event.pointerId !== activePointerId) {
       return;
     }
+
     const deltaX = event.clientX - dragStartX;
     offset = dragStartOffset - deltaX;
     normalizeOffset();

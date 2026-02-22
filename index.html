@@ -38,7 +38,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Instrument+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Sora:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -78,16 +78,18 @@
     </script>
   </head>
   <body>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
     <div class="backdrop" aria-hidden="true"></div>
 
     <header class="site-header">
       <div class="container header-row">
         <a href="#top" class="brand">MADHU JAYAKUMAR</a>
         <nav class="top-nav" aria-label="Primary">
+          <a href="#impact">Impact</a>
           <a href="#reviews">Peer Reviews</a>
           <a href="#education">Education</a>
           <a href="#work">Work</a>
-          <a href="#skills">Technical Skills</a>
+          <a href="#skills">Skills</a>
           <a class="top-nav-contact" href="#contact">Contact</a>
         </nav>
       </div>
@@ -119,7 +121,7 @@
     <main id="top">
       <section class="hero section container reveal">
         <div>
-          <p class="eyebrow">Software Engineer</p>
+          <p class="eyebrow">Senior Software Engineer</p>
           <h1>Madhu Jayakumar</h1>
           <div class="hero-summary">
             <figure class="hero-headshot-inline">
@@ -133,31 +135,74 @@
               />
             </figure>
             <p class="lead">
-              Senior software engineer | Backend | Full-stack | Microservices | Platform and Infra | AI |
-              Leadership, mentoring, and teaching
+              I build high-scale backend and data platforms that are reliable, cost-efficient, and designed
+              for long-term product growth.
             </p>
           </div>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#education">Career Profile</a>
-            <a class="btn btn-ghost" href="#skills">Technical Skills</a>
-            <a class="btn btn-contact" href="#contact">Get in Touch</a>
+            <a class="btn btn-primary" href="#impact">View Impact</a>
+            <a class="btn btn-ghost" href="#skills">Explore Stack</a>
+            <a class="btn btn-contact" href="#contact">Start a Conversation</a>
           </div>
+          <ul class="hero-metrics" aria-label="Career metrics">
+            <li>
+              <span>11+ years</span>
+              <p>in production software engineering</p>
+            </li>
+            <li>
+              <span>50M+</span>
+              <p>artists served through analytics platforms</p>
+            </li>
+            <li>
+              <span>7B/day</span>
+              <p>rows ingested in high-throughput pipelines</p>
+            </li>
+          </ul>
         </div>
 
         <aside class="hero-panel">
-          <h2>Snapshots</h2>
+          <h2>What teams rely on me for</h2>
           <ul>
-            <li>Graduate of Princeton and Cornell in computer science and engineering.</li>
-            <li>Built and scaled production systems from startup environments to global enterprises at Capital One, Spotify, Yext, Arista, Deutsche Bank, and Goldman Sachs.</li>
-            <li>Experience across backend, data, platform, and AI-enabled engineering.</li>
+            <li>Turning ambiguous product and platform problems into pragmatic technical plans.</li>
+            <li>Driving execution with clear ownership across engineering, product, and partner teams.</li>
+            <li>Elevating engineering quality through mentorship, design reviews, and production rigor.</li>
           </ul>
         </aside>
+      </section>
+
+      <section id="impact" class="section container reveal section-impact" aria-label="Impact highlights">
+        <div class="section-heading">
+          <p class="eyebrow">Impact</p>
+          <h2>Results that move the business</h2>
+        </div>
+        <div class="impact-grid">
+          <article class="impact-card">
+            <p class="impact-value">50M+</p>
+            <p class="impact-label">Artists and teams supported with production analytics at Spotify</p>
+          </article>
+          <article class="impact-card">
+            <p class="impact-value">7B rows/day</p>
+            <p class="impact-label">Ingested in ClickHouse pipelines while serving production workloads</p>
+          </article>
+          <article class="impact-card">
+            <p class="impact-value">1PB</p>
+            <p class="impact-label">Data tiered in Druid with sustained performance under peak demand</p>
+          </article>
+          <article class="impact-card">
+            <p class="impact-value">$840K/year</p>
+            <p class="impact-label">Infrastructure savings delivered through architecture and optimization</p>
+          </article>
+          <article class="impact-card">
+            <p class="impact-value">5+ engineers</p>
+            <p class="impact-label">Led directly as tech owner while shipping roadmap-critical systems</p>
+          </article>
+        </div>
       </section>
 
       <section id="reviews" class="section container reveal section-reviews" aria-label="Peer reviews">
         <div class="section-heading">
           <p class="eyebrow">Peer Reviews</p>
-          <h2>Peer Feedback Highlights</h2>
+          <h2>Trusted by the people who ship with me</h2>
         </div>
         <div class="reviews-carousel" data-review-carousel data-scroll-speed="72">
           <div class="reviews-viewport" data-review-viewport aria-label="Scrolling coworker review highlights">
@@ -578,7 +623,7 @@
                   <li>
                     <a class="skill-chip" href="https://openai.com/codex/" target="_blank" rel="noreferrer noopener">
                       <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=openai.com" alt="" loading="lazy" />
-                      <span>CodeX</span>
+                      <span>Codex</span>
                     </a>
                   </li>
                   <li>
@@ -614,7 +659,7 @@
                   <li>
                     <a class="skill-chip" href="https://kimi.com/" target="_blank" rel="noreferrer noopener">
                       <img class="skill-logo" src="https://www.google.com/s2/favicons?sz=128&domain_url=kimi.com" alt="" loading="lazy" />
-                      <span>KimiK</span>
+                      <span>Kimi</span>
                     </a>
                   </li>
                   <li>
@@ -750,7 +795,7 @@
                   <li>
                     <a class="skill-chip" href="https://aws.amazon.com/quicksight/" target="_blank" rel="noreferrer noopener">
                       <img class="skill-logo" src="https://icon.icepanel.io/AWS/svg/Analytics/QuickSight.svg" alt="" loading="lazy" />
-                      <span>Quick Sights</span>
+                      <span>QuickSight</span>
                     </a>
                   </li>
                 </ul>
