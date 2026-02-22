@@ -404,6 +404,8 @@ p {
   box-shadow: var(--shadow);
   position: relative;
   overflow: hidden;
+  max-width: 360px;
+  justify-self: end;
 }
 
 .hero-panel::before {
@@ -424,9 +426,10 @@ p {
 .hero-headshot img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  height: clamp(250px, 32vw, 360px);
+  max-height: 56vh;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 20%;
 }
 
 .hero-panel h2 {
@@ -1630,6 +1633,16 @@ p {
   .hero {
     padding-top: 2.85rem;
     gap: 1.32rem;
+  }
+
+  .hero-panel {
+    max-width: none;
+    justify-self: stretch;
+  }
+
+  .hero-headshot img {
+    height: min(72vw, 340px);
+    max-height: none;
   }
 
   .skills-grid,
