@@ -1,15 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MJ logo">
-  <rect width="64" height="64" fill="#f7f2ea" />
-  <rect x="4" y="4" width="56" height="56" fill="none" stroke="#97724d" stroke-width="2" />
-  <text
-    x="32"
-    y="39"
-    text-anchor="middle"
-    font-family="Georgia, serif"
-    font-size="24"
-    font-weight="700"
-    fill="#7d4c50"
-  >
-    MJ
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Madhu Jayakumar monogram favicon">
+  <defs>
+    <linearGradient id="faviconInk" x1="12" y1="10" x2="52" y2="53" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3a63e2" />
+      <stop offset="0.52" stop-color="#19a6a2" />
+      <stop offset="1" stop-color="#d45337" />
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="12" fill="#ffffff" />
+  <rect x="2" y="2" width="60" height="60" rx="10" fill="none" stroke="#7d8ea8" stroke-width="2.8" />
+  <rect x="5.5" y="5.5" width="53" height="53" rx="8" fill="none" stroke="#3a63e2" stroke-opacity="0.35" stroke-width="1.2" />
+
+  <path
+    d="M14 46V19L23 34L32 19V46"
+    fill="none"
+    stroke="url(#faviconInk)"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M45 19V39C45 45 41 49 35 49C30 49 27 46 25 42"
+    fill="none"
+    stroke="url(#faviconInk)"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
 </svg>
