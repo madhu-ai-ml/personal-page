@@ -367,19 +367,7 @@ p {
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center 20%;
-  transform: scale(1.03);
-  animation: portraitFloat 8.5s ease-in-out infinite;
-}
-
-@keyframes portraitFloat {
-  0%,
-  100% {
-    transform: scale(1.03) translateY(0);
-  }
-
-  50% {
-    transform: scale(1.03) translateY(-6px);
-  }
+  transform: scale(1.2);
 }
 
 .lead {
